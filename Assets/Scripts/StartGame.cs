@@ -25,4 +25,14 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("level2");
     }
+
+    public void GotoLevel_3()
+    {
+        SceneManager.LoadScene("level3");
+    }
+
+    public void GotoLevel_4()
+    {
+        SceneManager.LoadScene("level4");
+    }
 }
