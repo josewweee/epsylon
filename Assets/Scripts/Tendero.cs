@@ -1,28 +1,99 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Tendero : MonoBehaviour
 {
-    private List<InventarioTienda> ItemCompra;
+    public int dinero;
+    public GameObject inventario;
+    public List<ItemTienda> itemCompra;
+    public List<ItemTienda> itemDesactivar = new List<ItemTienda>();
+    public List<ItemTienda> itemActivar = new List<ItemTienda>();
+    [SerializeField]
+    private BaseDatos baseDatos;
+    public Text Dinero;    
     public GameObject ContenedorItems;
-    public GameObject Inventario;
+    public GameObject DineroInsuficiente;
+    public GameObject Confirmar;
+    public GameObject CartelCantidad;
 
-public baseDatos baseDatos;
+
+    // Start is called before the first frame update
     void Start()
     {
-        ItemCompra = new List<InventarioTienda>();
-        for (int i = 0; i < ContenedorItems.transform.childCount; i++)
+        itemCompra = new List<ItemTienda>();
+        for(int i = 0; i < ContenedorItems.transform.childCount;i++)
         {
-            ItemCompra.Add(ContenedorItems.transform.GetChild(i).GetComponent<InventarioTienda>());
+            itemCompra.Add(ContenedorItems.transform.GetChild(i).GetComponent<ItemTienda>());
         }
-
+        Confirmar.SetActive(false);
+        CartelCantidad.SetActive(false);
+        DineroInsuficiente.SetActive(false);
     }
 
-    public void comprar(int id){
-        Inventario.GetComponent<Inventario>().agregarItem(id);
-    }  
+    // Update is called once per frame
     void Update()
     {
+        Dinero.text = "Money: " + dinero.ToString();
+    }
+
+    public void Comprar(int id, int cantidad)
+    {
+        if(dinero >= itemCompra[id].precio*cantidad)
+        {
+            itemCompra[id].cantidad -= cantidad;
+            dinero -= itemCompra[id].precio*cantidad;
+            cantidad -=itemCompra[id].cantidad;
+            inventario.GetComponent<Inventario>().Agregar(id,cantidad);
+        }
+        else
+        {
+            DineroInsuficiente.SetActive(true);
+        }
+    }
+
+    public void esconderItem(int caso)
+    {
+        for(int i = 0; i<itemCompra.Count;i++)
+        {
+            if (caso == 0)
+            {
+                itemActivar.Clear();
+                itemActivar = itemCompra.FindAll(x => x.ID !=5);
+                foreach(ItemTienda itemA in itemActivar)
+                {
+                    itemA.gameObject.SetActive(true);
+                }
+                return;
+            }
+        desactivarItem(caso);
+        activarItem(caso);
+        }
         
     }
+
+    void activarItem(int caso)
+    {
+        itemActivar.Clear();
+        itemActivar = itemCompra.FindAll(x => x.ID == caso);
+            foreach(ItemTienda itemA in itemActivar)
+            {
+                itemA.gameObject.SetActive(true);
+            }
+    }
+
+    void desactivarItem(int caso)
+    {
+        itemDesactivar.Clear();
+        itemDesactivar = itemCompra.FindAll(x => x.ID != caso);
+        foreach(ItemTienda item in itemDesactivar)
+            {
+                if(item.gameObject.activeInHierarchy)
+                item.gameObject.SetActive(false);
+            }
+    }
+
 }
+
+
