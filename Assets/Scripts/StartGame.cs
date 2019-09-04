@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class StartGame : MonoBehaviour
 {
+    public void GotoMainmenu()
+    {
+        SceneManager.LoadScene("menu");
+    }
     public void GotoCharacterSelection()
     {
         SceneManager.LoadScene("character_selection");

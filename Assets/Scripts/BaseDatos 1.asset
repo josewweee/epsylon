@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: BaseDatos 1
+  m_EditorClassIdentifier: Assembly-CSharp::BaseDatos
+  baseDatos:
+  - nombre: Banana
+    ID: 0
+    precio: 300
+    icono: {fileID: 0}
+    tipo: 0
+    descripcion: 
+  - nombre: 
+    ID: 0
+    precio: 0
+    icono: {fileID: 0}
+    tipo: 0
+    descripcion: 
+  - nombre: 
+    ID: 0
+    precio: 0
+    icono: {fileID: 0}
+    tipo: 0
+    descripcion: 
