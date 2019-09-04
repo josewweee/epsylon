@@ -9,6 +9,7 @@
      InputField input;
      InputField.SubmitEvent se;
      public Text output;
+     public GameObject Malescrito;
  
  
      void Start()
@@ -23,11 +24,21 @@
  
      private void SubmitInput(string A)
      {
-         string currentText = output.text;
+
+        if (A == "Banana" || A == "Sugar"){
+           
+            string currentText = output.text;
          string newText = currentText + "\n" + ">" + A;
          output.text = newText;
          input.text = "";
          input.ActivateInputField();
+        }
+        else
+        {
+          Malescrito.SetActive(true);
+        
+        }
+
      }
  }
  
