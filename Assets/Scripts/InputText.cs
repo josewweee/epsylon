@@ -13,11 +13,15 @@
  
      void Start()
      {
- 
          input = gameObject.GetComponent<InputField>();
          se = new InputField.SubmitEvent();
          se.AddListener(SubmitInput);
-         input.onEndEdit = se;
+         
+         //MOSTRAR EL TEXTO SI ES POSIBLE
+         if(output != null){
+            input.onEndEdit = se;
+         }
+         
  
      }
  
