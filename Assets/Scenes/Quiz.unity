@@ -570,6 +570,7 @@ GameObject:
   - component: {fileID: 259718692}
   - component: {fileID: 259718691}
   - component: {fileID: 259718690}
+  - component: {fileID: 259718693}
   m_Layer: 0
   m_Name: Main Camera (1)
   m_TagString: MainCamera
@@ -642,6 +643,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &259718693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259718689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd08e65390b2894f9800429800bf97e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntaje: 0
+  completed: 
+  inp1: {fileID: 0}
+  inp2: {fileID: 0}
+  inp3: {fileID: 0}
+  inp4: {fileID: 0}
+  inp5: {fileID: 0}
+  inp6: {fileID: 0}
+  inp7: {fileID: 0}
+  quiz_inp1: {fileID: 217150845}
+  quiz_inp2: {fileID: 463392387}
+  quiz_inp3: {fileID: 850003496}
+  quiz_inp4: {fileID: 2000191005}
 --- !u!1 &324898804
 GameObject:
   m_ObjectHideFlags: 0

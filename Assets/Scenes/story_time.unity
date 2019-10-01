@@ -1678,7 +1678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd08e65390b2894f9800429800bf97e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntaje: 0
+  completed: 
   inp1: {fileID: 1999268796}
   inp2: {fileID: 1783712435}
   inp3: {fileID: 532088240}
@@ -1686,6 +1686,10 @@ MonoBehaviour:
   inp5: {fileID: 1314728770}
   inp6: {fileID: 1264679019}
   inp7: {fileID: 2087693947}
+  quiz_inp1: {fileID: 0}
+  quiz_inp2: {fileID: 0}
+  quiz_inp3: {fileID: 0}
+  quiz_inp4: {fileID: 0}
 --- !u!1 &837888936
 GameObject:
   m_ObjectHideFlags: 0
@@ -3714,6 +3718,49 @@ Transform:
   - {fileID: 457361666}
   m_Father: {fileID: 401130009}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1905503869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1905503871}
+  - component: {fileID: 1905503870}
+  m_Layer: 0
+  m_Name: puntaje
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1905503870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905503869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a23d4d6ac5371636991d7b0acc581ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1905503871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905503869}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1924280819
 GameObject:
