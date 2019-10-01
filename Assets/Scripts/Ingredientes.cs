@@ -16,11 +16,6 @@ public class Ingredientes : MonoBehaviour
     public GameObject arroz;
     public GameObject zanahoria;
 
-    void Start()
-    {
-        //CrearIngrediente("cebolla");
-    }
-
     
     void Update()
     {
@@ -28,24 +23,24 @@ public class Ingredientes : MonoBehaviour
     }
 
     public void CrearIngrediente ( string ingrediente ) {
-        Debug.Log(ingrediente);
         switch (ingrediente)
         {
             case "cebolla":
-            Instantiate(cebolla, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
+                Instantiate(cebolla, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
                 break;
             case "carne":
-            Instantiate(carne, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
-            Debug.Log("completado parte 2");
+                Debug.Log("bien -> " + ingrediente);
+                Instantiate(carne, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
                 break;
             case "cebollaVerde":
-            Instantiate(cebollaVerde, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
+                Instantiate(cebollaVerde, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
                 break;
             case "arroz":
-            Instantiate(arroz, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
+                Debug.Log("que putas? " + ingrediente);
+                Instantiate(arroz, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
                 break;
             case "zanahoria":
-            Instantiate(zanahoria, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
+                Instantiate(zanahoria, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
                 break;
             default:
                 break;
