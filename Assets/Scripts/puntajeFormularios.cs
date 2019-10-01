@@ -122,7 +122,7 @@ public class puntajeFormularios : MonoBehaviour
             Puntaje.puntajeJugador += 2.5f;
             completed[10] = true;
         }
-        Debug.Log("H: " + Puntaje.puntajeJugador);
+        // Debug.Log("H: " + Puntaje.puntajeJugador);
     }
 
 
@@ -169,7 +169,7 @@ public class puntajeFormularios : MonoBehaviour
             Puntaje.puntajeJugador += 2.5f;
             completed[3] = true;
         }
-        Debug.Log("Q: " + Puntaje.puntajeJugador);
+        // Debug.Log("Q: " + Puntaje.puntajeJugador);
     }
     
 }

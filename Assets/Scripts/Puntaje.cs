@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Puntaje : MonoBehaviour
 {
-    public static int score = 100;
+    public static float puntajeJugador = 0;
 
     void Start()
     {
