@@ -1156,7 +1156,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1173347370}
-        m_MethodName: GotoQuiz
+        m_MethodName: GotoLevel_4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1391,11 +1391,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3941020436084513407, guid: 52b313dae894a24a5bf67f858057839d,
-        type: 3}
-      propertyPath: m_Name
-      value: cebolla
-      objectReference: {fileID: 0}
     - target: {fileID: 2364855865816280576, guid: 52b313dae894a24a5bf67f858057839d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1451,12 +1446,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6845097163396058776, guid: 52b313dae894a24a5bf67f858057839d,
+    - target: {fileID: 3941020436084513407, guid: 52b313dae894a24a5bf67f858057839d,
+        type: 3}
+      propertyPath: m_Name
+      value: cebolla
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648491615876886016, guid: 52b313dae894a24a5bf67f858057839d,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4648491615876886016, guid: 52b313dae894a24a5bf67f858057839d,
+    - target: {fileID: 6845097163396058776, guid: 52b313dae894a24a5bf67f858057839d,
         type: 3}
       propertyPath: m_Enabled
       value: 1

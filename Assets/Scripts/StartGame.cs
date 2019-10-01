@@ -37,6 +37,11 @@ public class StartGame : MonoBehaviour
         SceneManager.LoadScene("level3");
     }
 
+    public void GotoLevel_4()
+    {
+        SceneManager.LoadScene("level4");
+    }
+
     public void GotoQuiz()
     {
         SceneManager.LoadScene("Quiz");
