@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quiz.unity
     guid: 535214b0789cb8978a23f18ae369460e
+  - enabled: 1
+    path: Assets/Scenes/score.unity
+    guid: 99013eeadefda0f4b8324ee1378709a7
+  - enabled: 1
+    path: Assets/Scenes/high_score.unity
+    guid: 45a6ae710ecb3954ea48199201542f38
   m_configObjects: {}

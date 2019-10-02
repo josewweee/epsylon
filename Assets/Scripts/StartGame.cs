@@ -46,4 +46,14 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("Quiz");
     }
+
+    public void GotoHighScore()
+    {
+        SceneManager.LoadScene("high_score");
+    }
+
+    public void GotoScore()
+    {
+        SceneManager.LoadScene("score");
+    }
 }
