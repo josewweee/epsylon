@@ -22,21 +22,21 @@
  
      }
  
-     private void SubmitInput(string A)
-     {
+     private void SubmitInput(string textoIngresado)
+     { 
 
-        if (A == "Banana" || A == "Sugar"){
-           
+        if ( textoIngresado.ToUpper().Contains("BEANS") || textoIngresado.ToUpper().Contains("CARROT") || textoIngresado.ToUpper().Contains("PEAS") || textoIngresado.ToUpper().Contains("GEEN ONIONS") || textoIngresado.ToUpper().Contains("PORK") || textoIngresado.ToUpper().Contains("CHICKEN") || textoIngresado.ToUpper().Contains("RICE") || textoIngresado.ToUpper().Contains("SESAME OIL") || textoIngresado.ToUpper().Contains("SOY SAUCE") ) 
+        {
+            Puntaje.puntajeJugador += 5f;
             string currentText = output.text;
-         string newText = currentText + "\n" + ">" + A;
-         output.text = newText;
-         input.text = "";
-         input.ActivateInputField();
+            string newText = currentText + "\n" + ">" + textoIngresado;
+            output.text = newText;
+            input.text = "";
+            input.ActivateInputField();
         }
         else
         {
           Malescrito.SetActive(true);
-        
         }
 
      }
