@@ -56,4 +56,9 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("score");
     }
+
+    public void GotoLogin()
+    {
+        SceneManager.LoadScene("Login");
+    }
 }
