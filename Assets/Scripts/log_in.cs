@@ -27,7 +27,7 @@ public class log_in : MonoBehaviour
 
     public async void postearAsync()
     {
-        input = gameObject.GetComponent<log_in_user>();
+        //input = gameObject.GetComponent<log_in_user>();
         string username = "Area51";
         string password = "";
         string url = "http://52.0.82.220/api/post/peoples";

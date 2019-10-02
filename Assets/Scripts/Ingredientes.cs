@@ -27,22 +27,22 @@ public class Ingredientes : MonoBehaviour
         switch (ingrediente)
         {
             case "cebolla":
-                Instantiate(cebolla, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
+                Instantiate(cebolla, new Vector3(-0.054f, 0f, 100f), Quaternion.identity);
                 break;
             case "carne":
-                Instantiate(carne, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
+                Instantiate(carne, new Vector3(-0.054f, 0f, 10f), Quaternion.identity);
                 break;
             case "carneCortada":
-                Instantiate(carneCortada, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
+                Instantiate(carneCortada, new Vector3(-0.054f, 0f, 10f), Quaternion.identity);
                 break;
             case "cebollaVerde":
-                Instantiate(cebollaVerde, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
+                Instantiate(cebollaVerde, new Vector3(-0.054f, 0f, 10f), Quaternion.identity);
                 break;
             case "arroz":
-                Instantiate(arroz, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
+                Instantiate(arroz, new Vector3(-0.054f, 0f, 10f), Quaternion.identity);
                 break;
             case "zanahoria":
-                Instantiate(zanahoria, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
+                Instantiate(zanahoria, new Vector3(-0.054f, 0f, 10f), Quaternion.identity);
                 break;
             default:
                 break;
