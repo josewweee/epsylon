@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
@@ -14,8 +15,10 @@ public class PostScore : MonoBehaviour
     public async void postearAsync()
     {
         string username = "Area51";
-        string id = "666";
-        string score = "51";
+        System.Random r = new System.Random();
+        int genRand = r.Next(1000, 100000);
+        string id = (genRand).ToString();
+        string score = (Puntaje.puntajeJugador).ToString();
         string description = "Naruto";
 
         string url = "http://52.0.82.220/api/post/puntajes";
