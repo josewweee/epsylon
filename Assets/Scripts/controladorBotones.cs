@@ -30,7 +30,7 @@ public class controladorBotones : MonoBehaviour
                 break;
             case 2:
                 Destroy( GameObject.Find("carne(clone)") );
-                ingredientes.CrearIngrediente("carne");
+                ingredientes.CrearIngrediente("carneCortada");
                 break;
             case 3:
                 Destroy( GameObject.Find("carne(clone)") );
@@ -43,6 +43,10 @@ public class controladorBotones : MonoBehaviour
             case 5:
                 Destroy( GameObject.Find("arroz(clone)") );
                 ingredientes.CrearIngrediente("cebollaVerde");
+                break;
+            case 6: //
+                StartGame manejadorEscenas = new StartGame();
+                manejadorEscenas.GotoLevel_4();
                 break;
             default:
                 break;

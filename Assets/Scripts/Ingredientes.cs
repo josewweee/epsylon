@@ -12,6 +12,7 @@ public class Ingredientes : MonoBehaviour
     //LISTA DE PREFAB DE INGREDIENTES
     public GameObject cebolla;
     public GameObject carne;
+    public GameObject carneCortada;
     public GameObject cebollaVerde;
     public GameObject arroz;
     public GameObject zanahoria;
@@ -29,14 +30,15 @@ public class Ingredientes : MonoBehaviour
                 Instantiate(cebolla, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
                 break;
             case "carne":
-                Debug.Log("bien -> " + ingrediente);
                 Instantiate(carne, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
+                break;
+            case "carneCortada":
+                Instantiate(carneCortada, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
                 break;
             case "cebollaVerde":
                 Instantiate(cebollaVerde, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
                 break;
             case "arroz":
-                Debug.Log("que putas? " + ingrediente);
                 Instantiate(arroz, new Vector3(-0.054f, 0f, -7.579053f), Quaternion.identity);
                 break;
             case "zanahoria":
