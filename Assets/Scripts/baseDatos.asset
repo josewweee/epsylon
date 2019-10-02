@@ -13,39 +13,39 @@ MonoBehaviour:
   m_Name: baseDatos
   m_EditorClassIdentifier: 
   baseDatos:
-  - nombre: Banano
+  - nombre: Cebolla
     ID: 0
     precio: 10
-    icono: {fileID: 21300000, guid: f25558f2cab809d43a418f8e201d98d1, type: 3}
-    tipo: 0
+    icono: {fileID: 21300000, guid: 3bbee5a8e66b6c250ac7610c65d77574, type: 3}
+    tipo: 1
     descripcion: 
   - nombre: Zanahoria
     ID: 1
-    precio: 100
+    precio: 10
     icono: {fileID: 21300000, guid: 33ba85d5fc7cbab4a9dcd8dc35e31542, type: 3}
     tipo: 1
     descripcion: 
-  - nombre: Azucar
+  - nombre: Carne
     ID: 2
-    precio: 1000
-    icono: {fileID: 21300000, guid: 8925c87a7beb94c4bb8da70f92affebc, type: 3}
+    precio: 10
+    icono: {fileID: 21300000, guid: c6c531e9c23db0e40b2eba0a8f947629, type: 3}
     tipo: 2
     descripcion: 
-  - nombre: Manzana
+  - nombre: Cebolla Verde
     ID: 3
-    precio: 0
-    icono: {fileID: 21300000, guid: e4c912e795a5da9409e92d2b66d7e95e, type: 3}
-    tipo: 0
+    precio: 10
+    icono: {fileID: 21300000, guid: c75092a3191bb3d5aa33dbe26664cf2d, type: 3}
+    tipo: 1
     descripcion: 
-  - nombre: Leche
+  - nombre: Arroz
     ID: 4
-    precio: 0
-    icono: {fileID: 21300000, guid: 8a38e0c362c83a047983d02b417b0980, type: 3}
-    tipo: 3
+    precio: 10
+    icono: {fileID: 21300000, guid: 8856391b09e3897438f4018a26806ed5, type: 3}
+    tipo: 1
     descripcion: 
-  - nombre: Vacio
+  - nombre: Berries
     ID: 5
     precio: 0
-    icono: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 3}
-    tipo: 3
+    icono: {fileID: 21300000, guid: 8705b5eabe1cefa4681c6656508b89d8, type: 3}
+    tipo: 0
     descripcion: 

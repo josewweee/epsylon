@@ -46,11 +46,15 @@ public class Tendero : MonoBehaviour
             dinero -= itemCompra[id].precio*cantidad;
             cantidad -=itemCompra[id].cantidad;
             inventario.GetComponent<Inventario>().Agregar(id,cantidad);
+        if(id == 0 || id == 1 || id == 2 || id == 3 || id == 4 || id == 5){
+            Puntaje.puntajeJugador+=5f;
+        }
         }
         else
         {
             DineroInsuficiente.SetActive(true);
         }
+
     }
 
     public void esconderItem(int caso)
