@@ -15,6 +15,7 @@ public class log_in : MonoBehaviour
 
     public Text text_register_users;
     public Text text_register_password;
+    public Text status_login;
 
     //VARIABLE GLOBAL DEL USUARIO
     public static string nombreUsuario;
@@ -60,6 +61,7 @@ public class log_in : MonoBehaviour
             }
             textstatusscore.text = "Puntaje Guardado";
             statuspost = true;
+            status_login.text = "Te has registrado con exito";
         }
         else
         {
@@ -76,6 +78,7 @@ public class log_in : MonoBehaviour
         }
         else
         {
+            status_login.text = "Contraseña o usuario no encontrado";
             Debug.Log("ERROR LOGIN");
         }
     }
