@@ -11,7 +11,6 @@ public class CantidadCompra : MonoBehaviour
     public Text CantidadCompraText;
     public int id;
     GameObject cartelConfirmar;
-    
 
     // Start is called before the first frame update
     void Start()
