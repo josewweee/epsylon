@@ -570,6 +570,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cebolla: {fileID: 3941020436084513407, guid: 52b313dae894a24a5bf67f858057839d, type: 3}
   carne: {fileID: 6627862150733047673, guid: a11c6dc655bce20a5990b5e22c5afef1, type: 3}
+  carneCortada: {fileID: 991229379505200490, guid: 6491cd6ce98d20e96bc1aca8d1191149,
+    type: 3}
   cebollaVerde: {fileID: 7845696399417331397, guid: 41e94c658a19713e28e4e3d997768cb1,
     type: 3}
   arroz: {fileID: 8685868502050251938, guid: d114c07c2aad5de4d8b47443ed637f65, type: 3}
@@ -647,6 +649,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cebolla: {fileID: 3941020436084513407, guid: 52b313dae894a24a5bf67f858057839d, type: 3}
   carne: {fileID: 6627862150733047673, guid: a11c6dc655bce20a5990b5e22c5afef1, type: 3}
+  carneCortada: {fileID: 991229379505200490, guid: 6491cd6ce98d20e96bc1aca8d1191149,
+    type: 3}
   cebollaVerde: {fileID: 7845696399417331397, guid: 41e94c658a19713e28e4e3d997768cb1,
     type: 3}
   arroz: {fileID: 8685868502050251938, guid: d114c07c2aad5de4d8b47443ed637f65, type: 3}
@@ -1141,7 +1145,7 @@ RectTransform:
   m_GameObject: {fileID: 1613669812}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 68.82989, y: 66.40009, z: 64.45261}
+  m_LocalScale: {x: 115.290054, y: 79.680115, z: 64.45261}
   m_Children: []
   m_Father: {fileID: 1762098864}
   m_RootOrder: 4
@@ -1169,7 +1173,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300020, guid: 3f6a2db8816d26b47ad689baf293a0df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c6eb4995d773db79f8d7a51ddfb35751, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1194,7 +1198,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613669812}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1225,7 +1229,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300020, guid: 3f6a2db8816d26b47ad689baf293a0df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c6eb4995d773db79f8d7a51ddfb35751, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

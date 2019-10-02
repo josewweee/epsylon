@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 908096312156629121}
   m_Layer: 0
   m_Name: zanahoria
-  m_TagString: Untagged
+  m_TagString: zanahoria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

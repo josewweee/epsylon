@@ -20,28 +20,35 @@ public class controladorBotones : MonoBehaviour
     }
 
      public void AumentarNivel () {
+        GameObject objeto;
         switch (controladorPasosReceta.instruccionActual)
         {
+            
             case 0:
                 break;
             case 1:
-                Destroy( GameObject.Find("cebolla") );
+                objeto = GameObject.FindWithTag("cebolla");
+                Destroy( objeto );
                 ingredientes.CrearIngrediente("carne");
                 break;
             case 2:
-                Destroy( GameObject.Find("carne(clone)") );
+                objeto = GameObject.FindWithTag("carne");
+                Destroy( objeto );
                 ingredientes.CrearIngrediente("carneCortada");
                 break;
             case 3:
-                Destroy( GameObject.Find("carne(clone)") );
+                objeto = GameObject.FindWithTag("carneCortada");
+                Destroy( objeto );
                 ingredientes.CrearIngrediente("zanahoria");
                 break;
             case 4:
-                Destroy( GameObject.Find("zanahoria(clone)") );
+                objeto = GameObject.FindWithTag("zanahoria");
+                Destroy( objeto );
                 ingredientes.CrearIngrediente("arroz");
                 break;
             case 5:
-                Destroy( GameObject.Find("arroz(clone)") );
+                objeto = GameObject.FindWithTag("arroz");
+                Destroy( objeto );
                 ingredientes.CrearIngrediente("cebollaVerde");
                 break;
             case 6: //
