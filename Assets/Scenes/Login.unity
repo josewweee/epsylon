@@ -288,8 +288,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0434eee45328bc4c99aed93843e9a30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textusers: {fileID: 0}
-  textscore: {fileID: 0}
+  text_login_users: {fileID: 1909513793}
+  text_login_password: {fileID: 973485297}
+  text_register_users: {fileID: 1699096837}
+  text_register_password: {fileID: 1944514735}
+  textstatusscore: {fileID: 0}
 --- !u!4 &270863913
 Transform:
   m_ObjectHideFlags: 0
@@ -783,7 +786,40 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 555073277}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 277217343}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1756138523}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 270863912}
+        m_MethodName: postearAsync
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &555073277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1040,7 +1076,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 637174938}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 277217343}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1756138523}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &637174938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2247,7 +2305,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1844488254}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 270863912}
+        m_MethodName: log_in_user
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1844488254
 MonoBehaviour:
   m_ObjectHideFlags: 0
