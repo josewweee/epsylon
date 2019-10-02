@@ -16,10 +16,13 @@ public class log_in : MonoBehaviour
     public Text text_register_users;
     public Text text_register_password;
 
+    //VARIABLE GLOBAL DEL USUARIO
+    public static string nombreUsuario;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
@@ -68,7 +71,7 @@ public class log_in : MonoBehaviour
     {
         if (verifyaccount(text_login_users.text, text_register_password.text))
         {
-
+            nombreUsuario = text_login_users.text;
             SceneManager.LoadScene("menu");
         }
         else

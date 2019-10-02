@@ -14,7 +14,7 @@ public class PostScore : MonoBehaviour
 
     public async void postearAsync()
     {
-        string username = "Area51";
+        string username = log_in.nombreUsuario;
         System.Random r = new System.Random();
         int genRand = r.Next(1000, 100000);
         string id = (genRand).ToString();
