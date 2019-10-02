@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Slot
+  - cebolla
+  - arroz
+  - carne
+  - carneCortada
+  - zanahoria
+  - cebollaVerde
   layers:
   - Default
   - TransparentFX
