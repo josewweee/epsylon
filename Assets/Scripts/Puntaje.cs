@@ -19,8 +19,8 @@ public class Puntaje : MonoBehaviour
     //ESTE OBJETO NO SE DESTRUIRA EN LAS NUEVAS ESCENAS
     void Start()
     {
+        Debug.Log(GeneroPersonaje.genero);
         DontDestroyOnLoad(gameObject);
-        Debug.Log(tiempoComienzo);
     }
 
 

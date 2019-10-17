@@ -17,7 +17,7 @@ public class StartGame : MonoBehaviour
     }
 
    
-    public void GotoStoryScene()
+    public static void GotoStoryScene()
     {
         SceneManager.LoadScene("story_time");
     }
