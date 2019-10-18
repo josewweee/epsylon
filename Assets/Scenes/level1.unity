@@ -1498,8 +1498,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b332eda4c1d2754caf0e4cc2843ce6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioHombre: {fileID: 8300000, guid: ee6d7ec974ad714e58b0ab0461819ef5, type: 3}
-  audioMujer: {fileID: 8300000, guid: 510737d8bdf7aaa81bfcbfa76e22c7d7, type: 3}
+  audioHombre: {fileID: 8300000, guid: 245ecf16e7d67428d8082c3824019730, type: 3}
+  audioMujer: {fileID: 8300000, guid: 3b902aca984405470a382a28e7d0d583, type: 3}
   audio: {fileID: 827507366}
 --- !u!82 &827507365
 AudioSource:
