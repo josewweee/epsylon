@@ -6,7 +6,10 @@ public class controladorPasosReceta : MonoBehaviour
 {
     //VARIABLE GLOBAL PARA LA INSTRUCCION DE LA RECETA EN QUE ESTAMOS
     public static int instruccionActual = 0;
-    public static string[] instruccionesCorrectas = new string[] {"dice", "chop", "cook", "chop", "cook", "slice"};
+    public static string[] instruccionesCorrectas = new string[] {
+        "1","2","3","4","5","6","7","8","9","10",
+        "11","12","13","14","15","16","17","18","19","20"
+        };
 
     //AUDIOS DE LA RECETA
     public AudioClip a1;
@@ -61,9 +64,9 @@ public class controladorPasosReceta : MonoBehaviour
 
         for(int j = 0; j < arregloBotones.Length; j++){
             if(j != i){
-                string instruccionBoton = instruccionesCorrectas[ Random.Range(0,6) ];
+                string instruccionBoton = instruccionesCorrectas[ Random.Range(0,20) ];
                 while (instruccionBoton == instruccionCorrecta) {
-                    instruccionBoton = instruccionesCorrectas[ Random.Range(0,6) ];
+                    instruccionBoton = instruccionesCorrectas[ Random.Range(0,20) ];
                 }
                 arregloBotones[j].GetComponent<nivel3>().accionBoton = instruccionBoton;
             }
