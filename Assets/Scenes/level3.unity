@@ -491,15 +491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b66d9b68c9911e85a310f00766b151b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cebolla: {fileID: 3941020436084513407, guid: 52b313dae894a24a5bf67f858057839d, type: 3}
-  carne: {fileID: 6627862150733047673, guid: a11c6dc655bce20a5990b5e22c5afef1, type: 3}
-  carneCortada: {fileID: 991229379505200490, guid: 6491cd6ce98d20e96bc1aca8d1191149,
-    type: 3}
-  cebollaVerde: {fileID: 7845696399417331397, guid: 41e94c658a19713e28e4e3d997768cb1,
-    type: 3}
-  arroz: {fileID: 8685868502050251938, guid: d114c07c2aad5de4d8b47443ed637f65, type: 3}
-  zanahoria: {fileID: 908096312156629122, guid: 12fa135c61e5d2cc1963dea27820d0dc,
-    type: 3}
 --- !u!1 &1123673954
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,26 +658,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1451b82644c2108d7acac79991cd91e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a1: {fileID: 8300000, guid: 7213e3010daf4c2c3a3e16330d60266c, type: 3}
-  a2: {fileID: 8300000, guid: ca041456cf043145e851058631b50b32, type: 3}
-  a3: {fileID: 8300000, guid: 6b58f4e5fe841b0d99e4a520e59d0ac3, type: 3}
-  a4: {fileID: 8300000, guid: 94980ee1a4c4c444c98e6b49db9b6eea, type: 3}
-  a5: {fileID: 8300000, guid: 9e7c654b533ee529aad0981b7f1693a2, type: 3}
-  a6: {fileID: 8300000, guid: 6d2825822ab807d4bbf3964b8d6ceb55, type: 3}
-  a7: {fileID: 8300000, guid: b8ab649ea9112a022906dcdd575f6ee7, type: 3}
-  a8: {fileID: 8300000, guid: 0ca88a2aec176b29abe5dc42bca49cd6, type: 3}
-  a9: {fileID: 8300000, guid: 83331db8d8b18caa0aeb8b4ee6f2003c, type: 3}
-  a10: {fileID: 8300000, guid: 230a4372e7cc3c2ceb5558ef83897082, type: 3}
-  a11: {fileID: 8300000, guid: a3890baae211cc67ca29032aac812e6b, type: 3}
-  a12: {fileID: 8300000, guid: 4673db89c300eee8fb44f68a07d3dee0, type: 3}
-  a13: {fileID: 8300000, guid: edd2a9f71fd2b818389c1135c2870743, type: 3}
-  a14: {fileID: 8300000, guid: 1a75a2a90b5061240a1869f966b30982, type: 3}
-  a15: {fileID: 8300000, guid: a86ffc0e6a45602178c46b93c9b04509, type: 3}
-  a16: {fileID: 8300000, guid: ab4c0bf0e82033f2b93a864a12450549, type: 3}
-  a17: {fileID: 8300000, guid: 507cc4d10519cdaaba98b4b4fbd2cad5, type: 3}
-  a18: {fileID: 8300000, guid: 0edb3a6257efbb868942aaf778f37534, type: 3}
-  a19: {fileID: 8300000, guid: 0b6c0287797dfdfc090ab71ef301a2b1, type: 3}
-  a20: {fileID: 8300000, guid: 9eb3b9c46268142858d075a6f5bae9bc, type: 3}
+  a1: {fileID: 0}
+  a2: {fileID: 0}
+  a3: {fileID: 0}
+  a4: {fileID: 0}
+  a5: {fileID: 0}
+  a6: {fileID: 0}
+  a7: {fileID: 0}
+  a8: {fileID: 0}
+  a9: {fileID: 0}
+  a10: {fileID: 0}
+  a11: {fileID: 0}
+  a12: {fileID: 0}
+  a13: {fileID: 0}
+  a14: {fileID: 0}
+  a15: {fileID: 0}
+  a16: {fileID: 0}
+  a17: {fileID: 0}
+  a18: {fileID: 0}
+  a19: {fileID: 0}
+  a20: {fileID: 0}
   audio: {fileID: 1173347374}
   boton1: {fileID: 892744894}
   boton2: {fileID: 1613669812}
@@ -704,15 +695,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b66d9b68c9911e85a310f00766b151b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cebolla: {fileID: 3941020436084513407, guid: 52b313dae894a24a5bf67f858057839d, type: 3}
-  carne: {fileID: 6627862150733047673, guid: a11c6dc655bce20a5990b5e22c5afef1, type: 3}
-  carneCortada: {fileID: 991229379505200490, guid: 6491cd6ce98d20e96bc1aca8d1191149,
-    type: 3}
-  cebollaVerde: {fileID: 7845696399417331397, guid: 41e94c658a19713e28e4e3d997768cb1,
-    type: 3}
-  arroz: {fileID: 8685868502050251938, guid: d114c07c2aad5de4d8b47443ed637f65, type: 3}
-  zanahoria: {fileID: 908096312156629122, guid: 12fa135c61e5d2cc1963dea27820d0dc,
-    type: 3}
 --- !u!82 &1173347374
 AudioSource:
   m_ObjectHideFlags: 0

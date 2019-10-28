@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class controladorPasosReceta : MonoBehaviour
 {
+    //GENERO DEL JUGADOR
+    string genero = GeneroPersonaje.genero;
+
+
     //VARIABLE GLOBAL PARA LA INSTRUCCION DE LA RECETA EN QUE ESTAMOS
     public static int instruccionActual = 0;
     public static string[] instruccionesCorrectas = new string[] {
@@ -41,9 +45,32 @@ public class controladorPasosReceta : MonoBehaviour
     public GameObject boton3;
     public GameObject boton4;
     void Start () {
-        //CAMBIAR ESTOS POR LA RUTA
+        //ASIGNAMOS EL AUDIO DEPENDIENDO DEL GENERO.
+           a1 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i1");
+           a2 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i2");
+           a3 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i3");
+           a4 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i4");
+           a5 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i5");
+           a6 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i6");
+           a7 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i7");
+           a8 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i8");
+           a9 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i9");
+           a10 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i10");
+           a11 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i11");
+           a12 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i12");
+           a13 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i13");
+           a14 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i14");
+           a15 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i15");
+           a16 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i16");
+           a17 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i17");
+           a18 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i18");
+           a19 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i19");
+           a20 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i20");
+
+        //PONEMOS AUDIOS Y BOTONES EN UN ARREGLO PARA ITERARLOS
         arregloAudios = new AudioClip[] {a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20};
         arregloBotones = new GameObject[] {boton1, boton2, boton3, boton4}; // 0 - 4
+        
         audio.PlayOneShot(a1);
         CambiarAccionBotones();
     }
