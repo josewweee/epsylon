@@ -43,11 +43,9 @@ public class ItemTienda : MonoBehaviour , IPointerClickHandler
 
         confirmacion = tendero.Confirmar;
         Cartelcantidad = tendero.CartelCantidad;
-        precio = DB.baseDatos[ID].precio;
         icono = GetComponent<Image>();
         icono.sprite = DB.baseDatos[ID].icono;
-        precioText.text = precio.ToString();
-        cantidadText.text = cantidad.ToString();
+   
     }
     public void OnPointerClick(PointerEventData eventData)
     {
