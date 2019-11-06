@@ -25,7 +25,7 @@
      private void SubmitInput(string textoIngresado)
      { 
 
-        if ( textoIngresado.ToUpper().Contains("BEANS") || textoIngresado.ToUpper().Contains("CARROT") || textoIngresado.ToUpper().Contains("PEAS") || textoIngresado.ToUpper().Contains("GREEN ONIONS") || textoIngresado.ToUpper().Contains("PORK") || textoIngresado.ToUpper().Contains("CHICKEN") || textoIngresado.ToUpper().Contains("RICE") || textoIngresado.ToUpper().Contains("SESAME OIL") || textoIngresado.ToUpper().Contains("SOY SAUCE") ) 
+        if ( textoIngresado.ToUpper().Contains("BEANS") || textoIngresado.ToUpper().Contains("CARROT") || textoIngresado.ToUpper().Contains("PEAS") || textoIngresado.ToUpper().Contains("ONIONS") || textoIngresado.ToUpper().Contains("PORK") || textoIngresado.ToUpper().Contains("CHICKEN") || textoIngresado.ToUpper().Contains("RICE") || textoIngresado.ToUpper().Contains("SESAME OIL") || textoIngresado.ToUpper().Contains("SOY SAUCE") ) 
         {
             Puntaje.puntajeJugador += 5f;
             string currentText = output.text;
