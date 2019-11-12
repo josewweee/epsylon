@@ -10,6 +10,8 @@ public class ShowScore : MonoBehaviour
     public Text pusers;
     public Text pscore;
 
+    public Text directcode;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,8 +54,30 @@ public class ShowScore : MonoBehaviour
             Debug.Log(json);
             Debug.Log(valueOriginal);
             return valueOriginal;
-
         }
+    }
+
+    public void getscorecode()
+    {
+        string myjson = getall();
+        string tempusers = "";
+        string temphighscore = "";
+        List<userScore> myDeserializedObjList = (List<userScore>)Newtonsoft.Json.JsonConvert.DeserializeObject(myjson, typeof(List<userScore>));
+        foreach (userScore o in myDeserializedObjList)
+        {
+            if (!String.Equals(o.username, null))
+            {
+                if (String.Equals(o.description, directcode))
+                {
+                    tempusers += (o.username) + "\n";
+                    temphighscore += (o.score) + "\n";
+                }                    
+            }
+        }
+        pusers.text = tempusers;
+        pscore.text = temphighscore;
+        Debug.Log(myDeserializedObjList);
+
     }
 }
 
