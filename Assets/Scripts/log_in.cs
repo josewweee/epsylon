@@ -19,6 +19,7 @@ public class log_in : MonoBehaviour
 
     //VARIABLE GLOBAL DEL USUARIO
     public static string nombreUsuario;
+    public static bool is_teacherr;
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +46,8 @@ public class log_in : MonoBehaviour
 
         string myJson = "{" +
             "\"username\":\"" + username + "\"," +
-            "\"password\":\"" + password + "\"" +
+            "\"password\":\"" + password + "\"," +
+            "\"isteacher\": "+ "0" + "" +
             "}";
 
         myJson = myJson.Replace("\r\n", "");
@@ -92,6 +94,15 @@ public class log_in : MonoBehaviour
             {
                 if (String.Equals(o.password, temppassword))
                 {
+                    if (o.isteacher ==true)
+                    {
+                        Debug.Log("ADMIN LOGIN");
+                        is_teacherr = true;
+                    }
+                    else
+                    {
+                        is_teacherr = false;
+                    }
                     return true;
                 }
             }
@@ -120,4 +131,6 @@ public class userlogin
 {
     public string username { get; set; }
     public string password { get; set; }
+    public bool isteacher { get; set; }
+
 }

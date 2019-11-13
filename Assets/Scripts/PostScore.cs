@@ -13,7 +13,11 @@ public class PostScore : MonoBehaviour
     public Text textstatusscore ;
     public Text textusername;
     public InputField in_description;
-
+    void Start()
+    {
+        string username = log_in.nombreUsuario;
+        textusername.text = username;
+    }
     public async void postearAsync()
     {
         string username = log_in.nombreUsuario;

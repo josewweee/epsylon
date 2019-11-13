@@ -56,9 +56,25 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("score");
     }
+    public void GototeachScore()
+    {
+        SceneManager.LoadScene("teacher_find");
+    }
+    public void checkuser()
+    {
+        if (log_in.is_teacherr=true)
+        {
+            GototeachScore();
+        }
+    }
 
     public void GotoLogin()
     {
         SceneManager.LoadScene("Login");
     }
+    public void Questmanager()
+    {
+        SceneManager.LoadScene("QuestManager");
+    }
+
 }
