@@ -23,10 +23,10 @@ public class PostScore : MonoBehaviour
     {
         
         string username = log_in.nombreUsuario;
-        //textusername.text = username;
+        textusername.text = username;
 
-        textusername.text = "User1";
-        username = "User1";
+       // textusername.text = "User1";
+        //username = "User1";
 
         System.Random r = new System.Random();
         int genRand = r.Next(1000, 100000);
