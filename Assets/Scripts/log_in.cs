@@ -71,7 +71,7 @@ public class log_in : MonoBehaviour
 
     public void log_in_user()
     {
-        if (verifyaccount(text_login_users.text, text_register_password.text))
+        if (verifyaccount(text_login_users.text, text_login_password.text))
         {
             nombreUsuario = text_login_users.text;
             SceneManager.LoadScene("menu");

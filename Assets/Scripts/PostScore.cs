@@ -11,15 +11,18 @@ public class PostScore : MonoBehaviour
 
     private bool statuspost = false;
     public Text textstatusscore ;
+    public Text textusername;
+    public InputField in_description;
 
     public async void postearAsync()
     {
         string username = log_in.nombreUsuario;
+        textusername.text = username;
         System.Random r = new System.Random();
         int genRand = r.Next(1000, 100000);
         string id = (genRand).ToString();
         string score = (Puntaje.puntajeJugador).ToString();
-        string description = "Naruto";
+        string description = in_description.text;
 
         string url = "http://52.0.82.220/api/post/puntajes";
 

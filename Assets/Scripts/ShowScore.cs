@@ -9,7 +9,7 @@ public class ShowScore : MonoBehaviour
 {
     public Text pusers;
     public Text pscore;
-
+    public InputField in_code;
     public Text directcode;
 
     // Start is called before the first frame update
@@ -40,19 +40,19 @@ public class ShowScore : MonoBehaviour
         }
         pusers.text = tempusers;
         pscore.text = temphighscore;
-        Debug.Log(myDeserializedObjList);
+        //Debug.Log(myDeserializedObjList);
     }
 
     public string getall()
     {
         using (WebClient webClient = new System.Net.WebClient())
         {
-            Debug.Log("Hello World!");
+            //Debug.Log("Hello World!");
             WebClient n = new WebClient();
             var json = n.DownloadString("http://52.0.82.220/api/post/puntajes/allpuntaje");
             string valueOriginal = Convert.ToString(json);
-            Debug.Log(json);
-            Debug.Log(valueOriginal);
+            //Debug.Log(json);
+            //Debug.Log(valueOriginal);
             return valueOriginal;
         }
     }
@@ -67,7 +67,7 @@ public class ShowScore : MonoBehaviour
         {
             if (!String.Equals(o.username, null))
             {
-                if (String.Equals(o.description, directcode))
+                if (String.Equals(o.description, in_code.text))
                 {
                     tempusers += (o.username) + "\n";
                     temphighscore += (o.score) + "\n";
@@ -76,8 +76,7 @@ public class ShowScore : MonoBehaviour
         }
         pusers.text = tempusers;
         pscore.text = temphighscore;
-        Debug.Log(myDeserializedObjList);
-
+        //Debug.Log(myDeserializedObjList);
     }
 }
 
