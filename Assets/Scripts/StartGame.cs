@@ -62,7 +62,7 @@ public class StartGame : MonoBehaviour
     }
     public void checkuser()
     {
-        if (log_in.is_teacherr=true)
+        if (log_in.is_teacherr==true)
         {
             GototeachScore();
         }

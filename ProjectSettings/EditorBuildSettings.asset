@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/main.unity
     guid: 9f6a0464e0b36214f9046920157a29c8
   - enabled: 0
+    path: Assets/Scenes/Login.unity
+    guid: 030f7d49a1b93ef468882eb4202d6874
+  - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
@@ -44,9 +47,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/high_score.unity
     guid: 45a6ae710ecb3954ea48199201542f38
-  - enabled: 1
-    path: Assets/Scenes/Login.unity
-    guid: 030f7d49a1b93ef468882eb4202d6874
   - enabled: 1
     path: Assets/Scenes/teacher_find.unity
     guid: 54554f48a12e54e4baa62bc4184e609a

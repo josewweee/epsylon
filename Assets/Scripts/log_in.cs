@@ -21,6 +21,7 @@ public class log_in : MonoBehaviour
     public static string nombreUsuario;
     public static bool is_teacherr;
 
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +31,6 @@ public class log_in : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
 
