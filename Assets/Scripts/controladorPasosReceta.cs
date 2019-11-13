@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class controladorPasosReceta : MonoBehaviour
@@ -11,11 +12,16 @@ public class controladorPasosReceta : MonoBehaviour
     //VARIABLE GLOBAL PARA LA INSTRUCCION DE LA RECETA EN QUE ESTAMOS
     public static int instruccionActual = 0;
     public static string[] instruccionesCorrectas = new string[] {
-        "1","2","3","4","5","6","7","8","9","10",
-        "11","12","13","14","15","16","17","18","19","20"
+        "heat 1 tablespoon","add onions","stir fry for 10 mins","remove","mix","add half tablespoon","add egg mixture","remove","chop","heat 1 tablespoon",
+        "add meat","add carrots","stir fry 2 mins","add rice","mix","stir fry for 2 mins","add 2 tablespoon","add chooped eggs","cook for 1 min","serve"
         };
 
-    //AUDIOS DE LA RECETA
+    public static string[] textosInstrucciones = new string[] {
+        "heat 1 tablespoon","add onions","stir fry for 10 mins","remove","mix","add half tablespoon","add egg mixture","remove","chop","heat 1 tablespoon",
+        "add meat","add carrots","stir fry 2 mins","add rice","mix","stir fry for 2 mins","add 2 tablespoon","add chooped eggs","cook for 1 min","serve"
+        };
+
+    //AUDIOS DE LA RECETAinstruccionesCorrectas
     public AudioClip a1;
     public AudioClip a2;
     public AudioClip a3;
@@ -39,11 +45,17 @@ public class controladorPasosReceta : MonoBehaviour
     public AudioSource audio;
     private AudioClip[] arregloAudios;
     private GameObject[] arregloBotones;
+    private Text[] arregloTextos;
 
     public GameObject boton1;
     public GameObject boton2;
     public GameObject boton3;
     public GameObject boton4;
+
+    public Text texto1;
+    public Text texto2;
+    public Text texto3;
+    public Text texto4;
     void Start () {
         //ASIGNAMOS EL AUDIO DEPENDIENDO DEL GENERO.
            a1 = Resources.Load<AudioClip>("Audios/lvl3/"+genero+"/i1");
@@ -70,6 +82,7 @@ public class controladorPasosReceta : MonoBehaviour
         //PONEMOS AUDIOS Y BOTONES EN UN ARREGLO PARA ITERARLOS
         arregloAudios = new AudioClip[] {a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20};
         arregloBotones = new GameObject[] {boton1, boton2, boton3, boton4}; // 0 - 4
+        arregloTextos = new Text[] {texto1, texto2, texto3, texto4}; // 0 - 4
         
         audio.PlayOneShot(a1);
         CambiarAccionBotones();
@@ -87,13 +100,18 @@ public class controladorPasosReceta : MonoBehaviour
         int i =  Random.Range(0,4);
         string instruccionCorrecta = instruccionesCorrectas[instruccionActual];
         arregloBotones[i].GetComponent<nivel3>().accionBoton = instruccionCorrecta;
+        arregloTextos[i].text = textosInstrucciones[instruccionActual];
         Debug.Log("boton correcto #" + i);
 
         for(int j = 0; j < arregloBotones.Length; j++){
             if(j != i){
-                string instruccionBoton = instruccionesCorrectas[ Random.Range(0,20) ];
+                int valorRandom = Random.Range(0,20);
+                string instruccionBoton = instruccionesCorrectas[ valorRandom ];
+                arregloTextos[j].text = textosInstrucciones[valorRandom];
                 while (instruccionBoton == instruccionCorrecta) {
-                    instruccionBoton = instruccionesCorrectas[ Random.Range(0,20) ];
+                    valorRandom = Random.Range(0,20);
+                    instruccionBoton = instruccionesCorrectas[ valorRandom ];
+                    arregloTextos[j].text = textosInstrucciones[valorRandom];
                 }
                 arregloBotones[j].GetComponent<nivel3>().accionBoton = instruccionBoton;
             }
