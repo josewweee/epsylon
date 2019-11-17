@@ -491,7 +491,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 927557722}
-        m_MethodName: showhigh
+        m_MethodName: showscores
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1054,7 +1054,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 98, y: 184}
+  m_AnchoredPosition: {x: 117, y: 180}
   m_SizeDelta: {x: 533.8, y: 140.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1539836557
@@ -1088,7 +1088,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HIGH SCORES
+  m_Text: Quests DB
 --- !u!222 &1539836558
 CanvasRenderer:
   m_ObjectHideFlags: 0

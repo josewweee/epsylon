@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class ShowScore : MonoBehaviour
@@ -24,9 +25,19 @@ public class ShowScore : MonoBehaviour
         
     }
 
-    public void showscores()
+
+    public void showhigh()
     {
-        string myjson = getall();
+        getall(1);
+    }
+
+    public void showspesific()
+    {
+        getall(2);
+    }
+    public void showscores(string myjson)
+    {
+        //string myjson = getall();
         string tempusers = "";
         string temphighscore = "";
         List<userScore> myDeserializedObjList = (List<userScore>)Newtonsoft.Json.JsonConvert.DeserializeObject(myjson, typeof(List<userScore>));
@@ -43,8 +54,29 @@ public class ShowScore : MonoBehaviour
         //Debug.Log(myDeserializedObjList);
     }
 
-    public string getall()
+    public void getall(int i)
     {
+        string urll = "http://52.0.82.220/api/post/puntajes/allpuntaje";
+
+        WWW wwwl = new WWW(urll);
+        StartCoroutine(GetdataEnumerator(www: wwwl));
+        IEnumerator GetdataEnumerator(WWW www)
+        {
+            //Wait for request to complete
+            yield return www;   
+            string json = www.text;
+            if (i==1)
+            {
+                showscores(json);
+            }
+            else
+            {
+                getscorecode(json);
+            }
+           
+        }
+
+        /*
         using (WebClient webClient = new System.Net.WebClient())
         {
             //Debug.Log("Hello World!");
@@ -55,11 +87,12 @@ public class ShowScore : MonoBehaviour
             //Debug.Log(valueOriginal);
             return valueOriginal;
         }
+        */
     }
 
-    public void getscorecode()
+    public void getscorecode(string myjson)
     {
-        string myjson = getall();
+        //string myjson = getall();
         string tempusers = "";
         string temphighscore = "";
         List<userScore> myDeserializedObjList = (List<userScore>)Newtonsoft.Json.JsonConvert.DeserializeObject(myjson, typeof(List<userScore>));

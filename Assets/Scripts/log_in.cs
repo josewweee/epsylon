@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -42,7 +43,7 @@ public class log_in : MonoBehaviour
     {
         string username = text_register_users.text;
         string password = text_register_password.text;
-        string url = "http://52.0.82.220/api/post/peoples";
+        string urll = "http://52.0.82.220/api/post/peoples";
 
         string myJson = "{" +
             "\"username\":\"" + username + "\"," +
@@ -52,7 +53,31 @@ public class log_in : MonoBehaviour
 
         myJson = myJson.Replace("\r\n", "");
         Debug.Log(myJson);
+        StartCoroutine(PostRequest(url: urll, json: myJson));
 
+        IEnumerator PostRequest(string url, string json)
+        {
+            var uwr = new UnityWebRequest(url, "POST");
+            byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
+            uwr.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
+            uwr.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
+            uwr.SetRequestHeader("Content-Type", "application/json");
+
+            //Send the request then wait here until it returns
+            yield return uwr.SendWebRequest();
+            status_login.text = "Te has registrado con exito";
+
+            if (uwr.isNetworkError)
+            {
+                Debug.Log("Error While Sending: " + uwr.error);
+            }
+            else
+            {
+                Debug.Log("Received: " + uwr.downloadHandler.text);
+            }
+
+        }
+        /*
         if (!statuspost)
         {
             using (var client = new HttpClient())
@@ -69,25 +94,42 @@ public class log_in : MonoBehaviour
         {
             textstatusscore.text = "Ya ha sido Guardado tu puntaje";
         }
+        */
     }
 
     public void log_in_user()
     {
-        if (verifyaccount(text_login_users.text, text_login_password.text))
+        string urll = "http://52.0.82.220/api/post/peoples/allpeople";
+
+        WWW wwwl = new WWW(urll);
+        StartCoroutine(GetdataEnumerator(www: wwwl));
+        IEnumerator GetdataEnumerator(WWW www)
         {
-            nombreUsuario = text_login_users.text;
-            SceneManager.LoadScene("menu");
+            //Wait for request to complete
+            yield return www;
+            string json = www.text;
+
+            if (verifyaccount(text_login_users.text, text_login_password.text,json))
+            {
+                nombreUsuario = text_login_users.text;
+                SceneManager.LoadScene("menu");
+            }
+            else
+            {
+                status_login.text = "Contraseña o usuario no encontrado";
+                Debug.Log("ERROR LOGIN");
+            }
+
         }
-        else
-        {
-            status_login.text = "Contraseña o usuario no encontrado";
-            Debug.Log("ERROR LOGIN");
-        }
+
+      
     }
-    public bool verifyaccount(string tempusers, string temppassword)
+    public bool verifyaccount(string tempusers, string temppassword,string myjson)
     {
-        string myjson = getall();
+        //string myjson = getall();
+
         List<userlogin> myDeserializedObjList = (List<userlogin>)Newtonsoft.Json.JsonConvert.DeserializeObject(myjson, typeof(List<userlogin>));
+        
         foreach (userlogin o in myDeserializedObjList)
         {
             if (String.Equals(o.username, tempusers))
@@ -110,6 +152,7 @@ public class log_in : MonoBehaviour
         return false;
     }
 
+    /*
     public string getall()
     {
         using (WebClient webClient = new System.Net.WebClient())
@@ -124,7 +167,7 @@ public class log_in : MonoBehaviour
 
         }
     }
-   
+   */
 }
 
 public class userlogin
