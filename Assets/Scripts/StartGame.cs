@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class StartGame : MonoBehaviour
 {
-
     public void GoToMenu()
     {
         SceneManager.LoadScene("menu");
@@ -62,7 +61,7 @@ public class StartGame : MonoBehaviour
     }
     public void checkuser()
     {
-        if (log_in.is_teacherr=true)
+        if (log_in.is_teacherr==true)
         {
             GototeachScore();
         }
@@ -72,9 +71,15 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("Login");
     }
-    public void Questmanager()
+    public void GotoQuestmanager()
     {
         SceneManager.LoadScene("QuestManager");
     }
+    public void Gotolistquest()
+    {
+        SceneManager.LoadScene("showquest");
+    }
+
+
 
 }
