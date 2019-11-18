@@ -445,6 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3026c13f729b9340a33e2b4b58503dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cat: {fileID: 1230884916}
 --- !u!1 &515208732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,7 +1170,7 @@ GameObject:
   - component: {fileID: 1230884919}
   - component: {fileID: 1230884918}
   m_Layer: 5
-  m_Name: Button
+  m_Name: buscore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

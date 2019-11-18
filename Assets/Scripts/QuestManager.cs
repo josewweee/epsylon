@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Net.Http;
 using System.Text;
+using UnityEngine.Networking;
 
 public class QuestManager : MonoBehaviour
 {
@@ -37,7 +38,7 @@ public class QuestManager : MonoBehaviour
         string quest = in_quest.text;
         string answer = in_answer.text;
 
-        string url = "http://52.0.82.220/api/post/preguntas";
+        string urll = "http://52.0.82.220/api/post/preguntas";
 
         string myJson = "{" +
             "\"id\":\"" + id + "\"," +
@@ -47,6 +48,34 @@ public class QuestManager : MonoBehaviour
             "}";
         myJson = myJson.Replace("\r\n", "");
         Debug.Log(myJson);
+
+        StartCoroutine(PostRequest(url: urll, json: myJson));
+
+        IEnumerator PostRequest(string url, string json)
+        {
+            var uwr = new UnityWebRequest(url, "POST");
+            byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
+            uwr.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
+            uwr.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
+            uwr.SetRequestHeader("Content-Type", "application/json");
+
+            //Send the request then wait here until it returns
+            yield return uwr.SendWebRequest();
+            textstatusscore.text = "Pregunta Guardada";
+            statuspost = false;
+            in_quest.text = "";
+            in_answer.text = "";
+            if (uwr.isNetworkError)
+            {
+                Debug.Log("Error While Sending: " + uwr.error);
+            }
+            else
+            {
+                Debug.Log("Received: " + uwr.downloadHandler.text);
+            }
+
+        }
+
         if (!statuspost)
         {
             using (var client = new HttpClient())

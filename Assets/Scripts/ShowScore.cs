@@ -10,6 +10,7 @@ public class ShowScore : MonoBehaviour
 {
     public Text pusers;
     public Text pscore;
+    public Text psquest;
     public InputField in_code;
     public Text directcode;
 
@@ -43,7 +44,7 @@ public class ShowScore : MonoBehaviour
         List<userScore> myDeserializedObjList = (List<userScore>)Newtonsoft.Json.JsonConvert.DeserializeObject(myjson, typeof(List<userScore>));
         foreach (userScore o in myDeserializedObjList)
         {
-            if (!String.Equals(o.username, null))
+            if (!String.Equals(o.username, null) && !String.Equals(o.username, ""))
             {
                 tempusers += (o.username) + "\n";
                 temphighscore += (o.score) + "\n";

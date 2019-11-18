@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class StartGame : MonoBehaviour
 {
-
     public void GoToMenu()
     {
         SceneManager.LoadScene("menu");
@@ -72,9 +71,15 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("Login");
     }
-    public void Questmanager()
+    public void GotoQuestmanager()
     {
         SceneManager.LoadScene("QuestManager");
     }
+    public void Gotolistquest()
+    {
+        SceneManager.LoadScene("showquest");
+    }
+
+
 
 }
