@@ -13,16 +13,20 @@ public class GeneroAudio : MonoBehaviour
     void Start()
     {
 
-        audioHombre = Resources.Load<AudioClip>("Audios/introduccion/introduccionHombre");
-        audioMujer = Resources.Load<AudioClip>("Audios/introduccion/introMujer");
-
+        audioHombre = Resources.Load<AudioClip>("Audios/introduccion/introduccionHombre.mp3");
+        audioMujer = Resources.Load<AudioClip>("Audios/introduccion/introMujer.mp3");
+        audio = GetComponent<AudioSource>();
         /* audio = GetComponent<AudioSource>(); */
+        ReproducirAudio();
+    }
+
+    public void ReproducirAudio(){
+        Debug.Log("valor del genero = " + genero);
         if (genero == "hombre"){
             audio.PlayOneShot(audioHombre);
         }else{
             Debug.Log(audioMujer);
             audio.PlayOneShot(audioMujer);
         }
-        
     }
 }

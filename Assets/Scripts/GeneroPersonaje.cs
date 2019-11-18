@@ -11,7 +11,7 @@ public class GeneroPersonaje : MonoBehaviour
      //ESTE OBJETO NO SE DESTRUIRA EN LAS NUEVAS ESCENAS
     void Start()
     {
-        Debug.Log(genero);
+        DontDestroyOnLoad(gameObject);
     }
 
    
