@@ -73,7 +73,7 @@ public class StartGame : MonoBehaviour
     }
     public void GotoQuestmanager()
     {
-        SceneManager.LoadScene("QuestManager");
+        SceneManager.LoadScene("Quest_manager");
     }
     public void Gotolistquest()
     {

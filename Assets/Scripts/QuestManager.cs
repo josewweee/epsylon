@@ -29,6 +29,27 @@ public class QuestManager : MonoBehaviour
     {
 
     }
+
+    public void deletequest()
+    {
+        string urll = "http://52.0.82.220/api/post/preguntas/deletepreguntas";
+
+        StartCoroutine(DeleteRequest(url:urll));
+        IEnumerator DeleteRequest(string url)
+        {
+            UnityWebRequest uwr = UnityWebRequest.Delete(url);
+            yield return uwr.SendWebRequest();
+
+            if (uwr.isNetworkError)
+            {
+                Debug.Log("Error While Sending: " + uwr.error);
+            }
+            else
+            {
+                Debug.Log("Deleted");
+            }
+        }
+    }
     public async void postearAsync()
     {
         System.Random r = new System.Random();
@@ -75,7 +96,7 @@ public class QuestManager : MonoBehaviour
             }
 
         }
-
+        /*
         if (!statuspost)
         {
             using (var client = new HttpClient())
@@ -93,7 +114,7 @@ public class QuestManager : MonoBehaviour
         {
             textstatusscore.text = "Ya ha sido Guardado tu Pregunta";
         }
-
+        */
 
 
     }

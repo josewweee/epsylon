@@ -6,6 +6,7 @@ public class isteacher : MonoBehaviour
 {
 
     public GameObject cat;
+    public GameObject cat2;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +15,12 @@ public class isteacher : MonoBehaviour
         if (log_in.is_teacherr == true)
         {
             cat.SetActive(true); // false to hide, true to show
+            cat2.SetActive(true); // false to hide, true to show
         }
         else
         {
             cat.SetActive(false); // false to hide, true to show
+            cat2.SetActive(false); // false to hide, true to show
         }
     }
     // Update is called once per frame
