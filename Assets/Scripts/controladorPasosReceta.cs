@@ -97,6 +97,7 @@ public class controladorPasosReceta : MonoBehaviour
     }
 
     public void CambiarAccionBotones(){
+        limpiarAccionBotones();
         int i =  Random.Range(0,4);
         string instruccionCorrecta = instruccionesCorrectas[instruccionActual];
         arregloBotones[i].GetComponent<nivel3>().accionBoton = instruccionCorrecta;
@@ -104,17 +105,33 @@ public class controladorPasosReceta : MonoBehaviour
         Debug.Log("boton correcto #" + i);
 
         for(int j = 0; j < arregloBotones.Length; j++){
-            if(j != i){
+            if (j != i){
                 int valorRandom = Random.Range(0,20);
                 string instruccionBoton = instruccionesCorrectas[ valorRandom ];
                 arregloTextos[j].text = textosInstrucciones[valorRandom];
-                while (instruccionBoton == instruccionCorrecta) {
+              /*   while (instruccionBoton == instruccionCorrecta) {
                     valorRandom = Random.Range(0,20);
                     instruccionBoton = instruccionesCorrectas[ valorRandom ];
                     arregloTextos[j].text = textosInstrucciones[valorRandom];
+                } */
+
+                for (int k = 0; k < arregloBotones.Length; k++) {
+                    if (j != k){
+                        while (arregloTextos[j].text == arregloTextos[k].text) {
+                            valorRandom = Random.Range(0,20);
+                            instruccionBoton = instruccionesCorrectas[ valorRandom ];
+                            arregloTextos[j].text = textosInstrucciones[valorRandom];
+                        }
+                    }
                 }
                 arregloBotones[j].GetComponent<nivel3>().accionBoton = instruccionBoton;
             }
+        }
+    }
+
+    public void limpiarAccionBotones(){
+        for (int i = 0; i < arregloBotones.Length; i++) {
+            arregloTextos[i].text = "";
         }
     }
 
