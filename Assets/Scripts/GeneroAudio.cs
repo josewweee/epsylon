@@ -13,8 +13,8 @@ public class GeneroAudio : MonoBehaviour
     void Start()
     {
 
-        audioHombre = Resources.Load<AudioClip>("Audios/introduccion/introduccionHombre.mp3");
-        audioMujer = Resources.Load<AudioClip>("Audios/introduccion/introMujer.mp3");
+        //audioHombre = Resources.Load<AudioClip>("Audios/introduccion/introduccionHombre.mp3");
+        //audioMujer = Resources.Load<AudioClip>("Audios/introduccion/introMujer.mp3");
         audio = GetComponent<AudioSource>();
         /* audio = GetComponent<AudioSource>(); */
         ReproducirAudio();
