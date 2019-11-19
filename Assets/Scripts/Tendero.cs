@@ -68,7 +68,7 @@ public class Tendero : MonoBehaviour
             }
             else if (id == 3)
             {
-                ingredientes[3] = "̶P̶O̶R̶K̶"";
+                ingredientes[3] = "̶P̶O̶R̶K̶";
                 Puntaje.puntajeJugador -= 3f;
             }
             else if (id == 4)
