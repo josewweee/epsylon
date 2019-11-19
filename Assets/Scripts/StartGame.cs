@@ -28,6 +28,10 @@ public class StartGame : MonoBehaviour
 
     public void GotoLevel_2()
     {
+        int respuestas = InputText.respuestas;
+        if ( respuestas != 8 ) {
+            Puntaje.puntajeJugador -= 40f;
+        }
         SceneManager.LoadScene("level2");
     }
 

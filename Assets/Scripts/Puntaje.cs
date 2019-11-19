@@ -26,9 +26,11 @@ public class Puntaje : MonoBehaviour
 
     void Update()
     {
-        if ( puntajeJugador > maximoPuntaje ) {
+        puntaje_UI = GameObject.FindWithTag("Slot").GetComponent<Text>();
+        puntaje_UI.text = puntajeJugador.ToString();
+       /*  if ( puntajeJugador > maximoPuntaje ) {
             puntaje_UI = GameObject.FindWithTag("Slot").GetComponent<Text>();
             puntaje_UI.text = puntajeJugador.ToString();
-        }
+        } */
     }
 }

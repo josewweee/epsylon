@@ -6,7 +6,7 @@
  
  public class InputText : MonoBehaviour
  {
-     int respuestas = 0;   
+     public static int respuestas = 0;   
      InputField input;
      InputField.SubmitEvent se;
      public Text output;
@@ -33,6 +33,7 @@
                 textoIngresado.ToUpper().Contains("SOY SAUCE") ) 
         {
             Puntaje.puntajeJugador += 5f;
+            Debug.Log("puntaje sumado " + Puntaje.puntajeJugador);
             string currentText = output.text;
             string newText = currentText + "\n" + ">" + textoIngresado;
             output.text = newText;
@@ -46,11 +47,10 @@
           Malescrito.SetActive(true);
         }
 
-        if (respuestas == 9)
+       /*  if (respuestas != 8)
         {
-            SceneManager.LoadScene ("level2");
-
-        }
+            Puntaje.puntajeJugador -= 40f;
+        } */
      }
  }
  

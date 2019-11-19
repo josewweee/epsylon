@@ -667,7 +667,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1738291525}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1008,7 +1008,7 @@ RectTransform:
   - {fileID: 707440440}
   - {fileID: 1118393285}
   m_Father: {fileID: 1024082838}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1083,7 +1083,7 @@ RectTransform:
   m_Children:
   - {fileID: 1130766448}
   m_Father: {fileID: 1738291525}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1335,7 +1335,7 @@ RectTransform:
   - {fileID: 491941676}
   - {fileID: 1161588916}
   m_Father: {fileID: 1738291525}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3344,7 +3344,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2076773873}
   - {fileID: 2109756126}
   - {fileID: 1967305873}
   - {fileID: 1586491874}
@@ -3375,7 +3374,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bb8e907d8f5280941b456cdd8f1762f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ba0bba86cea1ad08b8be3a1e0e28f0b0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3417,9 +3416,16 @@ MonoBehaviour:
   DineroInsuficiente: {fileID: 243252445}
   Confirmar: {fileID: 1967305872}
   CartelCantidad: {fileID: 1586491873}
-  ingredientes:
+  ingredientes2:
   - ONIONS
   - CARROTS
+  - RICE
+  - PEATS
+  - PORK
+  - CHICKEN
+  - GREEN ONION
+  - SESAME OIL
+  - SOY SAUCE
 --- !u!1 &1064052413
 GameObject:
   m_ObjectHideFlags: 0
@@ -4724,7 +4730,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1738291525}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4986,7 +4992,7 @@ RectTransform:
   - {fileID: 1580607252}
   - {fileID: 2078770758}
   m_Father: {fileID: 1024082838}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5288,6 +5294,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1024082838}
+  - {fileID: 2076773873}
   - {fileID: 400460114}
   - {fileID: 126446809}
   - {fileID: 1548994676}
@@ -5318,7 +5325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2384e040b861deb498cccb7014bf7e5d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c589fec81c1decd4bbc266069a5f1c65, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6029,7 +6036,7 @@ RectTransform:
   - {fileID: 522483011}
   - {fileID: 665551254}
   m_Father: {fileID: 1024082838}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6680,13 +6687,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2076773872}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9311161, y: 2.975, z: -7}
+  m_LocalPosition: {x: -1.9310913, y: 3, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1497101400}
   - {fileID: 1172046000}
-  m_Father: {fileID: 1024082838}
-  m_RootOrder: 0
+  m_Father: {fileID: 1738291525}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2078770757
 GameObject:
@@ -6896,7 +6903,7 @@ RectTransform:
   - {fileID: 674965995}
   - {fileID: 2053666664}
   m_Father: {fileID: 1024082838}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
