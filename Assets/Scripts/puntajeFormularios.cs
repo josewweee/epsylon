@@ -91,7 +91,6 @@ public class puntajeFormularios : MonoBehaviour
     void StoryQuestions() {
         if ( completed[0] == false && inp1.text.ToUpper().Contains(respuesta0.ToUpper()) )
         {
-            Debug.Log("completado" + respuesta0);
             Puntaje.puntajeJugador += 10f;
             completed[0] = true;
         }

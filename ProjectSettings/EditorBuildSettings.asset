@@ -38,9 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/character_selection.unity
     guid: 575fe44d76802b448831519c6b7a8569
-  - enabled: 1
-    path: Assets/Scenes/Quiz.unity
-    guid: 535214b0789cb8978a23f18ae369460e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/score.unity
     guid: 99013eeadefda0f4b8324ee1378709a7
@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/teacher_find.unity
     guid: 54554f48a12e54e4baa62bc4184e609a
+  - enabled: 1
+    path: Assets/Scenes/Quest_manager.unity
+    guid: 13c026f39bcd7c94994353b8ac94d3a9
+  - enabled: 1
+    path: Assets/Scenes/showquest.unity
+    guid: 628239124415bd243b88b194bdcf1ee8
   m_configObjects: {}
