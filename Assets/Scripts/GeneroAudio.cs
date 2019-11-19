@@ -8,7 +8,7 @@ public class GeneroAudio : MonoBehaviour
     public AudioClip audioHombre;
     public AudioClip audioMujer;
     string genero = GeneroPersonaje.genero;
-    public AudioSource audio;
+    public new AudioSource audio;
 
     void Start()
     {
