@@ -14,12 +14,13 @@ public class nivel3 : MonoBehaviour
     public void Procesar(){
         int i = controladorPasosReceta.instruccionActual;
         if(instrucciones[i] == accionBoton){
-            Puntaje.puntajeJugador+=5f;
+            Puntaje.puntajeJugador+=15f;
             controladorPasosReceta.instruccionActual++;
             i++;
             controlador.DetenerAudio();
             AumentarNivel(i);
         }else{
+            Puntaje.puntajeJugador-=15f;
             Debug.Log("BOTON ERRONEO INTENTA DE NUEVO: " + accionBoton);
         }
     }
