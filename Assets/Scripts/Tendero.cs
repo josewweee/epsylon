@@ -58,7 +58,7 @@ public class Tendero : MonoBehaviour
                 ingredientes[0] = " ̶O̶N̶I̶O̶N̶S̶";
                 tachar();
             }
-            else
+            else if
             {
                 Puntaje.puntajeJugador -= 3f;
             }

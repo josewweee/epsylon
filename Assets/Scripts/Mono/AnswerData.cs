@@ -3,22 +3,22 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class AnswerData : MonoBehaviour {
-
+    
     #region Variables
 
     [Header("UI Elements")]
-    [SerializeField]    TextMeshProUGUI infoTextObject      = null;
-    [SerializeField]    Image           toggle              = null;
-
+    [SerializeField] TextMeshProUGUI infoTextObject  = null;
+    [SerializeField] Image toggle = null;
+    
     [Header("Textures")]
-    [SerializeField]    Sprite          uncheckedToggle     = null;
-    [SerializeField]    Sprite          checkedToggle       = null;
+    [SerializeField] Sprite uncheckedToggle = null;
+    [SerializeField] Sprite checkedToggle = null;
 
     [Header("References")]
-    [SerializeField]    GameEvents      events              = null;
+    [SerializeField] GameEvents events = null;
 
-    private             RectTransform   _rect               = null;
-    public              RectTransform   Rect
+    private RectTransform _rect = null;
+    public RectTransform Rect
     {
         get
         {
@@ -30,10 +30,17 @@ public class AnswerData : MonoBehaviour {
         }
     }
 
-    private             int             _answerIndex        = -1;
-    public              int             AnswerIndex         { get { return _answerIndex; } }
+    private int _answerIndex = -1;
 
-    private             bool            Checked             = false;
+    public int AnswerIndex
+    {
+        get
+        {
+            return _answerIndex;
+        }
+    }
+
+    private bool Checked = false;
 
     #endregion
 

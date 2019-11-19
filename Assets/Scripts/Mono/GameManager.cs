@@ -9,39 +9,40 @@ public class GameManager : MonoBehaviour {
 
     #region Variables
 
-    private             Question[]          _questions              = null;
-    public              Question[]          Questions               { get { return _questions; } }
+    private Question[] _questions = null;
 
-    [SerializeField]    GameEvents          events                  = null;
+    public Question[] Questions
+    {
+        get
+        {
+            return _questions;
+        }
+    }
 
-    [SerializeField]    Animator            timerAnimtor            = null;
-    [SerializeField]    TextMeshProUGUI     timerText               = null;
-    [SerializeField]    Color               timerHalfWayOutColor    = Color.yellow;
-    [SerializeField]    Color               timerAlmostOutColor     = Color.red;
-    private             Color               timerDefaultColor       = Color.white;
-
-    private             List<AnswerData>    PickedAnswers           = new List<AnswerData>();
-    private             List<int>           FinishedQuestions       = new List<int>();
-    private             int                 currentQuestion         = 0;
-
-    private             int                 timerStateParaHash      = 0;
-
-    private             IEnumerator         IE_WaitTillNextRound    = null;
-    private             IEnumerator         IE_StartTimer           = null;
-
-    private             bool                IsFinished
+    [SerializeField] GameEvents events = null;
+    [SerializeField] Animator timerAnimtor = null;
+    [SerializeField] TextMeshProUGUI timerText = null;
+    [SerializeField] Color timerHalfWayOutColor = Color.yellow;
+    [SerializeField] Color timerAlmostOutColor = Color.red;
+    private Color timerDefaultColor = Color.white;
+    private List<AnswerData> PickedAnswers = new List<AnswerData>();
+    private List<int> FinishedQuestions = new List<int>();
+    private int currentQuestion = 0;
+    private int timerStateParaHash = 0;
+    private IEnumerator IE_WaitTillNextRound = null;
+    private IEnumerator IE_StartTimer = null;
+    private bool IsFinished
     {
         get
         {
             return (FinishedQuestions.Count < Questions.Length) ? false : true;
         }
     }
-
+    
     #endregion
 
     #region Default Unity methods
-
- 
+    
     void OnEnable()
     {
         events.UpdateQuestionAnswer += UpdateAnswers;
