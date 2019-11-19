@@ -19,8 +19,9 @@ public class Tendero : MonoBehaviour
     public GameObject DineroInsuficiente;
     public GameObject Confirmar;
     public GameObject CartelCantidad;
-    public string[] ingredientes = {"ONIONS" , "CARROTS"};
-
+    public string[] ingredientes = {"ONIONS" , "CARROTS" , "RICE" , "PEATS" ,"PORK","CHICKEN","GREEN ONION"
+            ,"SESAME OIL","SOY SAUCE"};
+    
     void Start()
     {
         itemCompra = new List<ItemTienda>();
@@ -41,9 +42,6 @@ public class Tendero : MonoBehaviour
     {
 
     }
-
-
-
     public void Comprar(int id, int cantidad)
     {
         if (dinero >= itemCompra[id].precio * cantidad)
@@ -52,14 +50,50 @@ public class Tendero : MonoBehaviour
             dinero -= itemCompra[id].precio * cantidad;
             cantidad -= itemCompra[id].cantidad;
             inventario.GetComponent<Inventario>().Agregar(id, cantidad);
-            if (id == 0 || id == 1 || id == 2 || id == 3 || id == 4 || id == 5)
+            if (id == 0)
             {
                 Puntaje.puntajeJugador += 5f;
-                ingredientes[0] = " ̶O̶N̶I̶O̶N̶S̶";
+                ingredientes[0] = "̶O̶N̶I̶O̶N̶S̶";
                 tachar();
             }
-            else if
+            else if (id == 1)
             {
+                ingredientes[1] = "̶C̶A̶R̶R̶O̶T̶S̶";
+                Puntaje.puntajeJugador -= 3f;
+            }
+            else if (id == 2)
+            {
+                ingredientes[2] = "̶R̶I̶C̶E̶";
+                Puntaje.puntajeJugador -= 3f;
+            }
+            else if (id == 3)
+            {
+                ingredientes[3] = "̶P̶O̶R̶K̶"";
+                Puntaje.puntajeJugador -= 3f;
+            }
+            else if (id == 4)
+            {
+                ingredientes[4] = "̶C̶H̶I̶C̶K̶E̶N̶";
+                Puntaje.puntajeJugador -= 3f;
+            }
+            else if (id == 5)
+            {
+                ingredientes[5] = "̶B̶E̶A̶N̶S̶";
+                Puntaje.puntajeJugador -= 3f;
+            }
+            else if (id == 6)
+            {
+                ingredientes[6] = "̶G̶R̶E̶E̶N̶̶O̶N̶I̶O̶N̶";
+                Puntaje.puntajeJugador -= 3f;
+            }
+            else if (id == 7)
+            {
+                ingredientes[7] = "̶S̶E̶S̶A̶M̶E̶̶O̶I̶L̶";
+                Puntaje.puntajeJugador -= 3f;
+            }
+            else if (id == 8)
+            {
+                ingredientes[8] = "̶S̶O̶Y̶̶S̶A̶U̶C̶E̶";
                 Puntaje.puntajeJugador -= 3f;
             }
         }
