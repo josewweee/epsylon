@@ -25,27 +25,75 @@ MonoBehaviour:
     icono: {fileID: 21300000, guid: 33ba85d5fc7cbab4a9dcd8dc35e31542, type: 3}
     tipo: 1
     descripcion: 
-  - nombre: Carne
+  - nombre: ARROZ
     ID: 2
     precio: 10
-    icono: {fileID: 21300000, guid: c6c531e9c23db0e40b2eba0a8f947629, type: 3}
+    icono: {fileID: 21300000, guid: 8856391b09e3897438f4018a26806ed5, type: 3}
     tipo: 2
     descripcion: 
-  - nombre: Cebolla Verde
+  - nombre: PORK
     ID: 3
     precio: 10
-    icono: {fileID: 21300000, guid: c75092a3191bb3d5aa33dbe26664cf2d, type: 3}
+    icono: {fileID: 21300000, guid: 1e4cc6bce0544134ea31454c82800a10, type: 3}
     tipo: 1
     descripcion: 
-  - nombre: Arroz
+  - nombre: CHICKEN
     ID: 4
     precio: 10
-    icono: {fileID: 21300000, guid: 8856391b09e3897438f4018a26806ed5, type: 3}
+    icono: {fileID: 21300000, guid: c6c531e9c23db0e40b2eba0a8f947629, type: 3}
     tipo: 1
     descripcion: 
-  - nombre: Berries
+  - nombre: BEANS
     ID: 5
     precio: 0
+    icono: {fileID: 21300000, guid: f359cc67a441dbd06820dc351a0988ca, type: 3}
+    tipo: 0
+    descripcion: 
+  - nombre: SESAME OIL
+    ID: 6
+    precio: 0
+    icono: {fileID: 21300000, guid: 0116cb2dfc6b32831be210dc73d0464f, type: 3}
+    tipo: 0
+    descripcion: 
+  - nombre: SOY SAUCE
+    ID: 7
+    precio: 0
+    icono: {fileID: 21300000, guid: f3ec41f0690baf7d7a9117ef3cce30e7, type: 3}
+    tipo: 0
+    descripcion: 
+  - nombre: Berries
+    ID: 8
+    precio: 0
     icono: {fileID: 21300000, guid: 8705b5eabe1cefa4681c6656508b89d8, type: 3}
+    tipo: 0
+    descripcion: 
+  - nombre: Berries
+    ID: 9
+    precio: 0
+    icono: {fileID: 21300000, guid: 5c4776b41296bde47b4e2daec3625848, type: 3}
+    tipo: 0
+    descripcion: 
+  - nombre: Berries
+    ID: 10
+    precio: 0
+    icono: {fileID: 21300000, guid: 05ae5b27f62190b4da657741df56fafd, type: 3}
+    tipo: 0
+    descripcion: 
+  - nombre: Berries
+    ID: 11
+    precio: 0
+    icono: {fileID: 21300000, guid: f25558f2cab809d43a418f8e201d98d1, type: 3}
+    tipo: 0
+    descripcion: 
+  - nombre: Berries
+    ID: 12
+    precio: 0
+    icono: {fileID: 21300000, guid: 4529ec1f96075cf43abd428185f25409, type: 3}
+    tipo: 0
+    descripcion: 
+  - nombre: Berries
+    ID: 13
+    precio: 0
+    icono: {fileID: 21300000, guid: 406e89c482e2de3499e25a3020d1e340, type: 3}
     tipo: 0
     descripcion: 

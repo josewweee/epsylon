@@ -285,8 +285,8 @@ public class GameManager : MonoBehaviour {
         if (events.ScoreUpdated != null)
         {
             events.ScoreUpdated();
-            Debug.Log("1" + Puntaje.puntajeJugador);
-            Debug.Log("2" +  Mathf.Round(events.CurrentFinalScore));
+            Debug.Log("1 -> " + Puntaje.puntajeJugador);
+            Debug.Log("2 -> " +  Mathf.Round(events.CurrentFinalScore));
             Puntaje.puntajeJugador += Mathf.Round(events.CurrentFinalScore);
             Debug.Log(Puntaje.puntajeJugador);
         }
