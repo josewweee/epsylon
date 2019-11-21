@@ -1067,8 +1067,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 272, y: 81}
-  m_SizeDelta: {x: 190.3, y: 105.8}
+  m_AnchoredPosition: {x: 265.2, y: 88}
+  m_SizeDelta: {x: 248.1, y: 105.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &544960727
 MonoBehaviour:
@@ -1101,7 +1101,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Registry
+  m_Text: INGREDIENTS
 --- !u!222 &544960728
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2008,8 +2008,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -125.2, y: 41}
-  m_SizeDelta: {x: 457.5, y: 114.8}
+  m_AnchoredPosition: {x: -116.33, y: 46}
+  m_SizeDelta: {x: 475.26, y: 146.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478704138
 MonoBehaviour:
@@ -2042,7 +2042,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Listen carefully to the audio below and write the necessary ingredients
+  m_Text: Listen to the audio very carefully and type the ingredients in the box.
 --- !u!222 &1478704139
 CanvasRenderer:
   m_ObjectHideFlags: 0
